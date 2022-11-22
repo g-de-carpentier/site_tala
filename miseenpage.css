@@ -1,0 +1,381 @@
+/*miseenpage.css*/
+
+/* Le site de l'aumonerie tala est en cours de renovation.
+Ce fichier est destine a la mise en page des pages mises a jour, notamment la page index.html.*/
+
+
+/*	Arriere-plan clair : #BDD2E0 rgb(189, 210, 224)
+	Couleur boite: #0A307C rgb(10, 48, 124)
+	Ombre sombre boite de dialogue : 385D8A, R: 56, G: 93, B: 138; */
+
+
+/* Elements principaux de la page */
+
+body 
+{
+	font-family: Garamond, Times, serif;
+	background-color: #B5CBD7;
+	color: #000;
+}
+
+#bloc_page
+{
+	max-width: 1200px;
+	margin: auto;
+}
+
+a {
+    text-decoration : underline;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+h1
+{
+	text-align: center;
+}
+
+section
+{
+	margin: 30px;
+}
+
+ul 
+{
+    list-style-type: none;
+}
+
+
+
+/* Header */
+
+header
+{
+	margin-left: 150px;
+}
+
+header a
+{
+	text-decoration:none;
+}
+
+#entete 
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #0A307C;
+	font-family: Verdana, sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 28px;
+	padding: 25px;
+	text-shadow: 3px 3px 2px #555;
+	border-radius: 10px;
+	box-shadow: 4px 4px #555;
+}
+
+#entete img
+{
+	height: 100px;
+	width: 100px;
+}
+
+#entete a:hover
+{
+	text-decoration: none;
+}
+
+#epigraphe
+{
+	padding: 5px;
+	text-align: right;
+	margin-left: 75%;
+	font-size: 16px;
+}
+
+header nav 
+{
+	background-color: #5184C4;
+	border-radius: 20px;
+	text-align: center;
+	color: #fff;
+	padding: 1px 10px;
+}
+	
+header nav ul
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 5px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-radius: 45px;
+}
+
+header nav a 
+{
+	color:#fff;
+}	
+
+header nav a:hover 
+{
+	color: #fff;
+	text-decoration: underline overline;
+}
+
+
+
+
+
+/* Slide */
+	
+#slide
+{
+	position: relative;
+	left: 5%;
+	min-width: 50%;
+	max-width: 85%;
+	height: 503px;
+	overflow: hidden;
+	display: block;
+}
+	
+#slide img
+{
+	right:54%;
+	float:left;
+	padding: 0px;
+/*	width: 53.45%;*/
+	height: 100%;
+	max-width: 54%;
+	display: block;
+	position: absolute;
+	border-radius: 20px 0 0 20px;
+}
+
+#slide .legend
+{
+	background-color: #73A2B6;
+	display: inline;
+	float:right;
+	position: absolute;
+	left: 46%;
+	height: 100%;
+	max-width: 40%;
+	padding: 0px;
+	border-radius: 0 20px 20px 0;
+}
+	
+#slide h1
+{
+	text-align: center;
+	font-size: 28px;
+	color:white;
+	margin-right: 3px;
+	margin-top: 12px;
+	margin-bottom:40px;
+}
+
+#slide h1 a
+{
+	color: white;
+	text-decoration: none;
+}
+
+#slide h1 a:hover
+{
+	color: white;
+	text-decoration: underline;
+}
+
+#slide h1
+{
+	text-align: justify;
+	font-size: 18px;
+	margin-left: 18px;
+	padding-right:18px;
+	color: white;
+}
+	
+
+
+
+
+/* Navigation gauche */
+
+.navside	
+{
+	position: relative;
+	top: 20px;
+	width: 130 px;
+	text-align: center;
+	font-family: "Helvetica Neue", "Times", sans-serif;
+	font-size: 15px;
+	float: left;
+}
+
+.navside img
+{
+	height: 100px;
+	margin-left: 40px;
+}
+
+.navside li
+{
+	padding: 4px;
+}
+
+.navside a
+{
+	font-size: 15px;
+	color: #000;
+	text-decoration: none;
+}
+
+.navside a:hover 
+{
+	text-decoration: underline overline;
+	color:#000;
+}
+
+.navside ul 
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.navside li:not(:last-child)
+{
+	border-bottom: 1px solid #fff;
+}
+
+
+
+
+
+/* Section actus + texte */
+
+section:nth-child(2)
+{
+
+}
+
+
+
+/* Actualites */
+
+aside 
+{
+	background-color:#5184C4;
+	margin: 10px;
+	width: 230px;
+	height:180px;
+	float:left;
+	border-radius: 20px;
+	text-align: center;
+}
+
+aside h1
+{
+	font-family: Futura, Georgia, Century, Garamond, serif;
+	color: white;
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+aside h1 a
+{
+	color: white;
+}
+
+aside h1 a:hover
+{
+	text-decoration:none;
+	color:white;
+}
+
+aside ul 
+{
+	list-style-type: none;
+	margin-right: 30px;
+}
+
+aside li 
+{
+	font-family: Futura, Georgia, Century, Garamond, serif;
+	color: white;
+	font-size: 15px;
+	margin: 10px;
+}
+	
+aside li a
+{
+	color: white;
+	text-decoration: none;
+}
+
+aside li a:hover
+{
+	color:white;	
+	text-decoration: underline;
+}
+
+
+
+
+/* Texte accueil */
+
+.texteaccueil 
+{
+	text-indent: 10px;
+	font-size: 17.5px;
+	font-weight: bold;
+}
+
+.patrons
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.photos
+{
+	text-align: center;
+}
+
+.patrons img
+{
+	height: 180px;
+}
+
+.patrons p:last-child
+{
+	padding-left: 1000px;
+}
+
+
+
+
+/* Footer */
+	
+footer 
+{
+	background-color: #3D6599;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px ;
+	box-shadow: 4px 4px #555 ;
+	position:relative;
+	clear: both;
+}
